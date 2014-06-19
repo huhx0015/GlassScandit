@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mirasense.scanditsdkdemo" android:versionName="4.0.1">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19" />
+
+    <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    
+    <application 
+        	android:icon="@drawable/icon" 
+        	android:label="@string/app_name" 
+        	android:theme="@android:style/Theme.NoTitleBar"
+        	android:allowBackup="true">
+
+        <activity android:name="com.mirasense.demos.ScanditSDKGlassActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensor">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/say_initiate_scan" />
+        </activity>
+        <activity android:name="com.mirasense.demos.ScanditSDKDemo" 
+                  android:screenOrientation="sensor"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.mirasense.demos.ScanditSDKSampleBarcodeActivity"
+                  android:label="@string/app_name" 
+                  android:screenOrientation="sensor">
+        </activity>
+        <activity android:name="com.mirasense.demos.SettingsActivity"
+                  android:label="@string/app_name" 
+                  android:screenOrientation="sensor">
+        </activity>
+
+        <activity android:name="com.mirasense.demos.JsonParser"
+            android:screenOrientation="sensor"
+            android:label="@string/app_name">
+        </activity>
+
+    </application>
+
+</manifest> 

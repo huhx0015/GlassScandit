@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\Michael Yoon Huh\Desktop\Projects\Demos\Scandit-Extended\app\build\pre-dexed\debug\gson-2.2.4-cfe05a81a66cdc32eb0c4584e3cf9668b654611e.jar"
+        jar="C:\Users\Michael Yoon Huh\Desktop\Projects\Demos\Scandit-Extended\app\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8"/>
+    <item
+        dex="C:\Users\Michael Yoon Huh\Desktop\Projects\Demos\Scandit-Extended\app\build\pre-dexed\debug\scanditsdk-barcodepicker-android-4.0.1-d266e017552dae7ccbbca63028aaf2fabaeb5f09.jar"
+        jar="C:\Users\Michael Yoon Huh\Desktop\Projects\Demos\Scandit-Extended\app\libs\scanditsdk-barcodepicker-android-4.0.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="5cfca8a80306cbb84a8b8aa5099aaf7e13dd8fc6"/>
+
+</pre-dex-items>
