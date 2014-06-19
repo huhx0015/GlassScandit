@@ -25,7 +25,7 @@ public class ServerResponder {
 
     // SERVER VARIABLES
     //private static final String URL = "http://gpop-server.com/find-a-product/search.php?q=1234"; // Server URL
-    private static final String URL = "http://gpop-server.com/find-a-product/search.php?"; // Server URL
+    private static final String URL = "http://gpop-server.com/find-a-product/search.php"; // Server URL
     private static final Gson gson = new Gson(); // Gson parser object.
     public static final Handler uiHandler = new Handler(); // UI handler?
 
@@ -88,7 +88,7 @@ public class ServerResponder {
 
         // NEW POST METHOD
         HttpPost httpMethod = new HttpPost(URL
-                + "?=" + encodeValue(title)
+                + "?q=" + encodeValue(title)
         );
 
         HttpResponse response;

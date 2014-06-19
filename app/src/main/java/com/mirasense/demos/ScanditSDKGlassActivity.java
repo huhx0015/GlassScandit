@@ -213,6 +213,9 @@ public class ScanditSDKGlassActivity extends Activity implements ScanditSDKListe
         /** SERVER RESPONSE CODE ** EXPERIMENTAL **/
         //serverResponder(cleanedBarcode);
 
+        Toast.makeText(ScanditSDKGlassActivity.this,
+                "ATTEMPTING TO CONTACT SERVER, TRANSMITTING " + cleanedBarcode + " TO THE SERVER...", Toast.LENGTH_LONG).show();
+
         ServerResponder.updateServer(cleanedBarcode,
                 barcodeList,
                 ScanditSDKGlassActivity.this);
