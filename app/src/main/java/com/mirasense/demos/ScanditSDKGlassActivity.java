@@ -3,7 +3,6 @@ package com.mirasense.demos;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
-import android.graphics.drawable.AnimationDrawable;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -19,13 +18,11 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.glass.app.Card;
 import com.google.android.glass.media.Sounds;
 import com.mirasense.scanditsdk.ScanditSDKAutoAdjustingBarcodePicker;
 import com.mirasense.scanditsdk.interfaces.ScanditSDK;
 import com.mirasense.scanditsdk.interfaces.ScanditSDKListener;
-
 import java.util.LinkedList;
 import java.util.List;
 
@@ -42,7 +39,7 @@ public class ScanditSDKGlassActivity extends Activity implements ScanditSDKListe
 
     // Enter your Scandit SDK App key here.
     // Your Scandit SDK App key is available via your Scandit SDK web account.
-    public static final String sScanditSdkAppKey = "xAjTvPA7EeOMXLoZ51Sr19zZeNwAStF2RUGkmpjcKB4";
+    public static final String sScanditSdkAppKey = "IT'S-A-SECRET!";
 
     // Glass Card-related objects.
     private Card _card;
@@ -292,7 +289,5 @@ public class ScanditSDKGlassActivity extends Activity implements ScanditSDKListe
 
     public void onServerUpdateError() {
         Log.d(TAG, "onServerUpdateError");
-
     }
-
 }

@@ -1,2 +1,5 @@
 /.idea
+/app/build
+/build
+/app/src/main/res/values/keys.xml
 /.gradle
