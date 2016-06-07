@@ -1,5 +1,5 @@
-Scandit Glass Scan
-==================
+Glass Scandit
+=============
 
 ## Description
 
